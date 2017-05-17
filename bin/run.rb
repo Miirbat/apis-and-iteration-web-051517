@@ -5,4 +5,8 @@ require_relative "../lib/command_line_interface.rb"
 
 welcome
 character = get_character_from_user
+if individual_character(character) == "No"
+  puts "Not a real character"
+else
 show_character_movies(character)
+end
